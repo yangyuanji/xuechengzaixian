@@ -1,0 +1,498 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;  /*  css3 盒子模型 */
+}
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?okqkgj');
+  src:  url('fonts/icomoon.eot?okqkgj#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?okqkgj') format('truetype'),
+    url('fonts/icomoon.woff?okqkgj') format('woff'),
+    url('fonts/icomoon.svg?okqkgj#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+em,i{
+	font-style:normal;
+}
+li{
+	list-style:none;
+}
+img{
+	border:0;
+	vertical-align:middle;
+}
+button{
+	cursor:pointer;
+}
+a{
+	color:#050505;
+	text-decoration:none;
+/* 	color: red; */
+}
+a:hover{
+	color:#c81623;
+}
+button,input{
+	font-family:Microsoft YaHei,tahoma,arial,Hiragino Sans GB,\\5b8b\4f53,sans-serif;
+}
+body{
+	-webkit-font-smoothing:antialiased;
+	background-color:#fff;
+	font:12px/1.5 Microsoft YaHei,tahoma,arial,Hiragino Sans GB,\\5b8b\4f53,sans-serif;
+	color:#666;
+}
+.hide,.none{
+	display:none;
+}
+.clearfix:after{
+	visibility:hidden;
+	clear:both;
+	display:block;
+	content:".";
+	height:0;
+}.clearfix{
+	*zoom:1;
+}
+
+body {
+
+	background-color: #f3f5f7;
+	height: 3000px;
+}
+header {
+
+	width: 1300px;
+	height: 100px;
+	/* background-color: pink; */
+	margin: 0 auto;
+	padding-top: 40px;  
+}
+.logo h1 {
+
+	padding: 0;
+	margin: 0;
+}
+.logo {
+
+	width: 195px;
+	height: 42px;
+/* 	background-color: purple; */
+	float: left;
+	
+}
+.logo a {
+	display: block;
+	width: 100%;
+	height: 42px;
+	background: url(../images/logo.png) no-repeat;
+	text-indent: -999px;
+	overflow: hidden;
+}
+nav {
+
+	float: left;
+}
+nav li {
+
+	float: left;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	margin-left: 25px;
+}
+nav a {
+
+	/* display: block; */
+	height: 40px;
+	font-size: 18px;
+	padding: 0 10px;
+
+
+}
+nav a:hover {
+
+	border-bottom: 1px solid #00a4ff;
+}
+.serch {
+
+	width: 410px;
+	height: 40px;
+/* 	background-color: purple; */
+	float: left;
+	margin-left: 40px;
+}
+
+.serch input {
+
+		height: 40px;
+		width: 363px;
+		border: 1px solid red;
+		outline: none;
+		padding-left: 10px;
+		float: left;
+
+}
+.serch button {
+
+	width:47px;
+	outline: none;
+	height: 40px;
+	float: left;
+	border: 0;
+	background-image: url(../images/search.png);
+}
+
+.personal {
+
+	float: right;
+	height: 40px;
+	line-height: 40px;
+
+	margin-right: 65px;
+}
+
+
+
+.personal dt,.personal dd {
+
+	float: left;
+
+
+}
+.personal i {
+
+	float: left;
+	display: block;
+	width: 20px;
+	height: 16px;
+	background-image: url(../images/lin.png);
+	background-repeat: no-repeat;
+	margin-top: 10px;
+	position: relative;
+	margin-left: 20px;
+
+
+}
+.personal i a {
+
+	display: block;				/* 让a铺满整个盒子 */
+	height: 100%;
+	width: 100%;
+}
+.personal i::before {
+content: " ";
+/* display: inline-block; */
+	width: 6px;
+	height: 6px;
+	background-color: red;
+	border-radius: 50%;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.personal img {
+	border-radius: 50%;
+	margin-left: 20px;
+	vertical-align: middle;			/* 文字图片水平居中对齐 */
+	transition: transform 1s ease-out; /* 谁做过度动画写道谁身上 */
+
+
+}
+.personal dt {
+	margin-left: 20px;
+	font-size: 18px;
+	color: red;
+}
+.personal dt a {
+
+	color: red;
+}
+.personal img:hover {
+
+
+	transform: rotate(360deg);	
+}
+.banner {
+
+	height: 420px;
+	background-color: #1c036c;
+}
+
+.w {
+
+	width: 1200px;				/* 版心1200 */
+	margin: 0 auto;	
+	position: relative;			  
+}
+
+.w .left-hand {
+
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 190px;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+.w .left-hand li {
+	height: 20px;
+	width: 190px;
+	margin-top: 25px;
+	
+	line-height: 20px;
+	position: relative;
+}
+
+.w .left-hand li a {
+	margin-left: 10px;
+	color: #ffff;
+	font-size: 14px;
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+.w .left-hand li a:hover {
+
+	color: #0a62a2;
+}
+.w .left-hand li::after {
+
+	content: "\e914";
+	font-family: "icomoon";
+/* 	display: inline-block; */
+	position: absolute;
+	font-size: 10px;
+	right: 20px;
+	top: 0px;
+	transform: rotate(-90deg);			/* 旋转90读 */
+}
+
+/* .w .left-hand li i {
+
+	font-family: "icomoon";
+	font-size: 40px;
+} */
+.circle {
+	width:180px;
+	height: 24px;
+	position: absolute;
+
+	bottom:20px;
+	left: 50%;						/* 定位走大盒子的一半，在返回自身的一般长度 */
+	margin-left: -90px;
+/* 	background-color: purple; */
+
+
+}
+
+.circle  li {
+	float: left;
+	width: 13px;
+	height: 13px;
+	background: rgba(255, 255, 255, 0.4);
+	border-radius: 50%;
+	margin: 0 5px;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+.circle .circle-1 {
+
+	width:20px;
+	border-radius: 6px 6px 6px 6px;
+	background-color: #fff;
+
+}
+.circle  li:hover {
+	width:20px;
+	border-radius: 6px 6px 6px 6px;
+	background-color: #fff;
+}
+.timebook {
+	width: 228px;
+	height: 300px;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	margin-top: -150px;
+	background:#fff;
+}
+.timebook dt {
+	height: 50px;
+	background-color:#9bceea;
+	font-weight: 700;
+	color: #fff;
+	line-height: 50px;
+	text-align: center;
+	font-size: 18px;
+}
+.timebook dd {
+	padding: 15px 20px 0px;
+
+}
+.timebook dd li {
+	height: 60px;
+	border-bottom: 1px solid #ccc;
+	/* background-color: pink; */
+	padding-top: 10px;
+
+}
+
+.timebook dd li:last-child {
+	border: 0;
+}
+.timebook h5 {
+	font-size: 16px;
+	font-weight: 400;
+}
+.alldesk {
+display: block;
+height: 40px;
+width: 200px;
+border: 1px solid #00a4ff;
+font-size: 16px;
+font-weight: 700;
+text-align: center;
+line-height: 40px;
+color: #00a4ff;
+}
+.alldesk:hover {
+	color: #00a4ff;
+}
+.recommend {
+	margin-top: 10px;
+/* 	background-color: purple; */
+	height: 60px;
+	line-height: 60px;
+	position: relative;
+	border-bottom: 1px solid black;
+}
+.recommend em {
+	position: absolute;
+	right: 10px;
+	bottom: 0px;
+	color: #42b2ff;
+	font-size: 14px;
+}
+.rec-l a {
+	margin: 0 15px;
+	font-size: 14px;
+}
+.rec-l strong {
+	color: #42b2ff;
+	font-size: 14px;
+	margin-right: 15px;
+}
+.products {
+
+	margin-top: 40px;
+}
+.pro-hd {
+
+	height: 55px;
+	background-color: #6666;
+
+
+}
+.pro-hd h4 {
+	float: left;
+	line-height: 40px;
+	font-size: 18px;
+	font-weight: normal;
+}
+.pro-hd a {
+	float: right;
+	margin-right: 10px;
+	line-height: 40px;
+}
+
+.pro-bd li {
+	width: 228px;
+	height: 270px;
+	background-color:#ffffff;
+	float: left;
+	margin: 0px 15px 15px 0px;
+	overflow: hidden;
+	transition: all 0.6s;
+}
+.pro-bd li:nth-child(5n) {					/* 把是5的倍数的选出来 */
+	margin-right: 0;
+}
+.pro-bd li img {
+	transition: all 0.6s;
+}
+.pro-bd li:hover {
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+	transform: translateY(-10px);
+}
+ .pro-bd li:hover img {
+	margin-left: -5px;
+}
+.pro-title {
+	width: 190px;
+	height: 40px;
+	margin: 20px auto;
+	font-size: 14px;
+	color: #050505;
+}
+.pro-bd li p {
+	text-align: center;
+	font-size: 12px;
+	color: #999;
+
+}
+.pro-bd p i {
+	color: #ffa57b;
+}
+footer {
+
+	height: 420px;
+/* 	background-color: pink; */
+	margin-top: 42px;
+	padding-top: 30px;
+
+}
+footer .footer-l {
+	float: left;
+}
+footer .footer-l p {
+	font-weight: 400;
+	font-size: 12px;
+	color: #6666;
+	margin-top: 20px;
+}
+footer .footer-l a {
+	display: block;
+	width: 120px;
+	height: 36px;
+	border: 1px solid #00a4ff;
+	color: #00a4ff;
+	text-align: center;
+	line-height: 36px;
+	margin-top: 20px;
+	font-size: 16px;
+	font-family: "微软雅黑";
+}
+footer .footer-r {
+	float: right;
+}
+footer .footer-r dl {
+	float: right;
+	margin-right: 143px;
+}
+footer .w .footer-r dl:first-child {
+	margin-right: 28px;
+}
+
+footer .footer-r dl dt {
+	color: #333333;
+	font-size: 16px;
+	font-weight: 700;
+}
+footer .footer-r dl dd {
+	color: #333333;
+	font-size: 12px;
+	font-weight:400;
+}
